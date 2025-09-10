@@ -1,0 +1,64 @@
+.about-us {
+    background-color: #e0ffe0; /* Light green background */
+    color: #333;
+    padding: 40px 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .about-us h1 {
+    color: #2a9d8f; /* Darker green for the header */
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .sub-heading {
+    color: #555;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .about-logo img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .about-text {
+    max-width: 500px;
+    text-align: left;
+  }
+  
+  .about-text p {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.6;
+  }
+  
+  .read-more-btn {
+    background-color: #2a9d8f; /* Button color matching the header */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+  }
+  
+  .read-more-btn:hover {
+    background-color: #21867a; /* Darker shade for hover */
+  }
+  

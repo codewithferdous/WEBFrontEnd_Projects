@@ -1,0 +1,57 @@
+.outerAR {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a2e; /* Dark background color */
+    color: #e0e0e0; /* Light text color */
+    padding: 40px; /* Increased padding for more space */
+    margin: 50px auto; /* Centered the box */
+    border-radius: 20px; /* Smooth, rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow effect */
+    max-width: 600px; /* Increased max-width */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover effects */
+    animation: popIn 1s ease-in-out, glow 2s infinite alternate; /* Pop-in animation and subtle glow */
+}
+
+.outerAR:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+.outerAR h1 {
+    font-size: 28px; /* Increased font size for heading */
+    margin-bottom: 20px; /* More space below the heading */
+    color: #ffffff; /* White color for heading */
+    text-align: center; /* Centered heading */
+}
+
+.outerAR p {
+    font-size: 18px; /* Increased font size for text */
+    margin: 15px 0; /* More space between paragraphs */
+    line-height: 1.7; /* Increased line height for better readability */
+    color: #d1d1d1; /* Slightly lighter color for text */
+    text-align: center; /* Centered text for a more polished look */
+}
+
+
+@keyframes popIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+@keyframes glow {
+    from {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 0 10px rgba(74, 144, 226, 0);
+    }
+    to {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 0 20px rgba(74, 144, 226, 0.8);
+    }
+}

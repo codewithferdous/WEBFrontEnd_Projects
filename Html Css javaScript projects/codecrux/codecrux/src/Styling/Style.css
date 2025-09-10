@@ -1,0 +1,45 @@
+.header {
+    background-color: #ffcc00; /* Match the header background color */
+    color: white;
+  }
+  
+  .sidebar {
+    background-color: #f8f9fa;
+    height: 100vh;
+  }
+  
+  .sidebar-actions button {
+    text-align: left;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .welcome-section {
+    margin-top: 20px;
+  }
+  .welcome-section p{
+    color: white;
+  }
+  p{
+    color: rgb(11, 11, 11);
+  }
+  .welcome-title {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer {
+    background-color: #ffcc00; /* Match the footer background color */
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+  h2{
+    color: white;
+  }
+  img{
+width: 100px;
+  }

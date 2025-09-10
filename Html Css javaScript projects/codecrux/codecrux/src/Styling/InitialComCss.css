@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(109.6deg, #242d39 11.2%, #10253c 51.2%, #000 98.6%);
+    color: white;
+}
+.initailPageData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%;
+    text-align: center;
+}
+
+.text-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .text-content p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+.initailPageData h1 {
+    color: white;
+    margin-bottom: 35px;
+    font-size: 2.5em;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.initailPageData p{
+    color: white;
+}
+.initailPageData h1:hover {
+    color: #0073e6;
+    transform: scale(1.05);
+}
+
+.outer {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    transition: background 0.3s ease;
+}
+
+header:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+.logo h2 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.otherHeaderCom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerLinks {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    position: relative;
+}
+
+.headerLinks::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #0073e6;
+    transition: width 0.3s ease;
+}
+
+.headerLinks:hover::after {
+    width: 100%;
+    left: 0;
+    background: #0073e6;
+}
+
+.headerLinks:hover {
+    color: #0073e6;
+}
+
+p {
+    color: white;
+}
+
+
+.buttonsItems{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.button {
+    background-color: #00ced1;
+    color: black;
+    height: 40px;
+    margin: 12px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bolder;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    font-size: 1.2em;
+}
+
+.button:hover {
+    background-color: #0073e6;
+    color: white;
+    transform: scale(1.05);
+}
+
+.outer footer {
+    margin: 10%;
+    text-align: center;
+    color: rgb(80, 153, 128);
+    font-size: 0.9em;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.9);
+    transition: background 0.3s ease;
+}
+
+.outer footer p {
+    color: rgb(80, 153, 128);
+    margin: 0;
+}
+
+.outer footer:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+/* InitialComCss.css */
+/* 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(109.6deg, #242d39 11.2%, #10253c 51.2%, #000 98.6%);
+    color: white;
+}
+
+.initailPageData h1 {
+    color: white;
+    margin-bottom: 35px;
+    font-size: 2.5em;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.initailPageData p{
+    color: white;
+}
+.initailPageData h1:hover {
+    color: #0073e6;
+    transform: scale(1.05);
+}
+.text-center{
+    margin-right: 450px;
+}
+.outer {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    transition: background 0.3s ease;
+}
+
+header:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+.logo h2 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.otherHeaderCom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerLinks {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    position: relative;
+}
+
+.headerLinks::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #0073e6;
+    transition: width 0.3s ease;
+}
+
+.headerLinks:hover::after {
+    width: 100%;
+    left: 0;
+    background: #0073e6;
+}
+
+.headerLinks:hover {
+    color: #0073e6;
+}
+
+p {
+    color: white;
+}
+
+.initailPageData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%;
+    text-align: center;
+}
+
+.buttonsItems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background-color: #00ced1;
+    color: black;
+    height: 40px;
+    margin: 12px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bolder;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    font-size: 1.2em;
+}
+
+.button:hover {
+    background-color: #0073e6;
+    color: white;
+    transform: scale(1.05);
+}
+
+.outer footer {
+    margin: 10%;
+    text-align: center;
+    color: rgb(80, 153, 128);
+    font-size: 0.9em;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.9);
+    transition: background 0.3s ease;
+}
+
+.outer footer p {
+    color: rgb(80, 153, 128);
+    margin: 0;
+}
+
+.outer footer:hover {
+    background: rgba(0, 0, 0, 0.9);
+} */

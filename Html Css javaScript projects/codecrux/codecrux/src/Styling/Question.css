@@ -1,0 +1,113 @@
+/* General container styling */
+.course {
+    background-color: #1a1a2e; /* Dark background color */
+    color: #e0e0e0; /* Light text color */
+    padding: 40px; /* Increased padding for more space */
+    margin: 50px auto; /* Centered the box */
+    border-radius: 20px; /* Smooth, rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow effect */
+    max-width: 800px; /* Increased max-width */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+.course.completed {
+    background-color: #2ecc71; /* Green background color when completed */
+}
+
+.course:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+.course h1 {
+    font-size: 32px; /* Increased font size for heading */
+    margin-bottom: 25px; /* More space below the heading */
+    color: #ffffff; /* White color for heading */
+    text-align: center; /* Centered heading */
+}
+.course h2 {
+    font-size: 28px; /* Increased font size for heading */
+    margin-bottom: 25px; /* More space below the heading */
+    color: #ffffff; /* White color for heading */
+    text-align: left; /* Centered heading */
+}
+.course p {
+    font-size: 20px; /* Increased font size for text */
+    margin: 20px 0; /* More space between paragraphs */
+    line-height: 1.8; /* Increased line height for better readability */
+    color: #d1d1d1; /* Slightly lighter color for text */
+}
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+.course a {
+    display: inline-block; /* Inline-block for margin and padding */
+    margin-top: 20px; /* Space above the link */
+    padding: 12px 20px; /* Padding for clickable area */
+    color: #4a90e2; /* Light blue color for link */
+    background-color: #2a2a4a; /* Background color for link */
+    border-radius: 5px; /* Rounded corners for link */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for color changes */
+}
+
+.course a:hover {
+    background-color: #4a90e2; /* Background color on hover */
+    color: #ffffff; /* Text color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Styling for the checkbox container */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    accent-color: #4a90e2; /* Checkbox color */
+    cursor: pointer;
+}
+
+.checkbox-container label {
+    font-size: 18px;
+    color: #d1d1d1; /* Checkbox label color */
+    cursor: pointer;
+}
+
+/* Styling for the last practice question to ensure it's on a different line */
+.course .last-question {
+    display: block;
+    margin-top: 30px;
+    font-size: 20px; /* Match other paragraph styles */
+    color: #d1d1d1; /* Consistent text color */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.course {
+    background-color: #1a1a2e; /* Dark background color */
+    /* Other styles */
+}
+
+.course.completed {
+    background-color: #104622;
+    color: black;
+    
+    /* Green background color when completed */
+}

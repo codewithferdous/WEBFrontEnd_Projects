@@ -1,0 +1,85 @@
+.main-contact {
+  border-bottom: 1px solid #315855;
+  padding: 40px 20px;
+  background-color: #e0ffe0;
+  color: #333;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 40px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contactus {
+  margin-top: 10px;
+  color: #333;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  padding: 10px;
+}
+/* 
+.contact-img .image {
+  width: 100%; 
+  height: auto;
+  max-width: 600px; 
+  border-radius: 10px;
+  width: 600px;
+  height: 470px;
+} */
+
+.contact-content {
+  margin-top: 15px;
+}
+
+.contact-heading {
+  color: #333;
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.contactform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.contactform .form-group {
+  width: 100%;
+  max-width: 500px; 
+}
+
+.contactname,
+.contactemail,
+.contact-msg {
+  
+  height: 40px;
+    width: 350px;
+    margin: 12px;
+    padding: 0 10px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 10px;
+}
+
+.contact-msg {
+  height: 100px;
+  resize: none;
+}
+
+.contact-btn {
+  background-color: #009688;
+  color: #333;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.contact-btn:hover {
+  background-color: #315855;
+}
