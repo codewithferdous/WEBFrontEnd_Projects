@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.Gallary-page {
+  background-image: url(Welcome.jpg);
+  /* Background image for the gallery page */
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+  width: 100%;
+  padding: 20px;
+  
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* Space between images */
+  justify-content: center;
+  /* Center images horizontally */
+  padding: 20px;
+  max-width: 1200px;
+  /* Limit the maximum width of the gallery */
+  margin: 0 auto;
+  /* Center the gallery horizontally */
+}
+
+.gallery-img {
+  flex: 1;
+  max-width: 100%;
+  /* Ensure images don't exceed their container width */
+  height: auto;
+  /* Maintain aspect ratio */
+  border-radius: 8px;
+  /* Rounded corners for images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Add shadow for a professional look */
+  transition: transform 0.3s ease;
+  /* Smooth zoom effect */
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+  /* Zoom effect on hover */
+}
+
+/* Responsive Layout */
+@media (min-width: 1200px) {
+  .gallery-img {
+    width: calc(33.33% - 20px);
+    /* 3 images per row */
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .gallery-img {
+    width: calc(50% - 20px);
+    /* 2 images per row on medium screens */
+  }
+}
+
+@media (max-width: 767px) {
+  .gallery-img {
+    width: calc(100% - 20px);
+    /* 1 image per row on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-img {
+    width: calc(100% - 10px);
+    /* Adjust for very small screens */
+  }
+}

@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.landing-page {
+  background-image: url(../Styling/TraveloHeader.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+  width: 100%;
+  position: relative;
+  /* Ensure child elements are positioned correctly */
+}
+
+.landing-heading {
+  color: rgb(32, 18, 18);
+  text-align: center;
+  /* Center text for smaller screens */
+  margin-top: 15%;
+  /* Adjust margin for better vertical alignment */
+  font-size: 3rem;
+  /* Responsive font size */
+}
+
+.land-content {
+  text-align: center;
+  /* Center text for smaller screens */
+  color: white;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  /* Responsive font size */
+  margin: 0 auto;
+  /* Center content horizontally */
+}
+
+.land-content a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  /* Responsive font size */
+}
+
+.land-content a:hover {
+  text-decoration: underline;
+}
+
+.land-button {
+  display: block;
+  margin: 20px auto;
+  /* Center button horizontally */
+  font-weight: bolder;
+  font-size: 1.2rem;
+  /* Responsive font size */
+  padding: 12px 24px;
+  /* Responsive padding */
+  color: white;
+  background-color: rgba(15, 15, 15, 0.068);
+  border: 2px solid white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.land-button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .landing-heading {
+    font-size: 2.5rem;
+  }
+
+  .land-content {
+    font-size: 1.2rem;
+  }
+
+  .land-content a {
+    font-size: 1.2rem;
+  }
+
+  .land-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .landing-heading {
+    font-size: 2rem;
+  }
+
+  .land-content {
+    font-size: 1rem;
+  }
+
+  .land-content a {
+    font-size: 1rem;
+  }
+
+  .land-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .landing-heading {
+    font-size: 1.8rem;
+  }
+
+  .land-content {
+    font-size: 0.9rem;
+  }
+
+  .land-content a {
+    font-size: 0.9rem;
+  }
+
+  .land-button {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing-heading {
+    font-size: 1.5rem;
+  }
+
+  .land-content {
+    font-size: 0.8rem;
+  }
+
+  .land-content a {
+    font-size: 0.8rem;
+  }
+
+  .land-button {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+  }
+}

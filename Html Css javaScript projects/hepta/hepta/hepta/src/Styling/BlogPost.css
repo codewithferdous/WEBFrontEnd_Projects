@@ -1,0 +1,149 @@
+/* src/Styling/BlogPost.css */
+.blogs {
+  background-color: #65C0BA;
+  width: 100%;
+  padding: 20px;
+  /* Add some padding to avoid content touching edges */
+  box-sizing: border-box;
+}
+
+.blogs-data {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.blog-heading {
+  font-size: 2.5rem;
+  /* Adjust font size for different screen sizes */
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.blog-para {
+  line-height: 1.5;
+  color: whitesmoke;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.125rem;
+}
+
+.bb {
+  margin-top: 30px;
+}
+
+.blog-cards {
+  display: flex;
+  flex-wrap: wrap;
+  /* Allow cards to wrap to next line */
+  justify-content: center;
+  /* Center the cards */
+  gap: 20px;
+  /* Add space between cards */
+}
+
+.bcard {
+  width: 100%;
+  max-width: 300px;
+  /* Limit maximum width of cards */
+  height: auto;
+  /* Allow height to adjust based on content */
+  background-color: white;
+  box-shadow: 0 0 80px rgba(108, 117, 125, 0.6);
+  margin: 0;
+  /* Remove margin-right */
+}
+
+.blogdata {
+  padding: 10px 20px;
+  /* Adjust padding */
+}
+
+.bcard-img {
+  width: 100%;
+  /* Make image responsive */
+  height: auto;
+  display: block;
+}
+
+.bcard-heading {
+  font-size: 1.5rem;
+  /* Adjust font size */
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.bcard-para {
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(104, 103, 103);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .blog-heading {
+    font-size: 2rem;
+  }
+
+  .blog-para {
+    font-size: 1rem;
+  }
+
+  .bcard-heading {
+    font-size: 1.25rem;
+  }
+
+  .bcard-para {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .blogs-data {
+    padding: 15px;
+  }
+
+  .blog-heading {
+    font-size: 1.75rem;
+  }
+
+  .blog-para {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-heading {
+    font-size: 1.5rem;
+  }
+
+  .blog-para {
+    font-size: 0.75rem;
+  }
+
+  .bcard {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .bcard-heading {
+    font-size: 1rem;
+  }
+
+  .bcard-para {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .blogs-data {
+    padding: 10px;
+  }
+
+  .blog-heading {
+    font-size: 1.25rem;
+  }
+
+  .blog-para {
+    font-size: 0.625rem;
+  }
+}

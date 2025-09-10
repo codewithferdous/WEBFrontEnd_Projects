@@ -1,0 +1,159 @@
+/* General Styles */
+.image-data {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.img-heading {
+  font-weight: 800;
+  font-size: 2.5rem;
+  /* Adjust font size for smaller screens */
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.img-para {
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(104, 103, 103);
+  font-style: italic;
+  font-size: 1.2rem;
+  /* Adjust font size for smaller screens */
+}
+
+.img-change {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 100%;
+  /* Ensure it scales properly */
+  margin: auto;
+  overflow: hidden;
+}
+
+.img-change-inner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.colorset {
+  width: 100%;
+  height: 300px;
+  /* Adjust height for better scaling on smaller screens */
+  background-color: #65C0BA;
+}
+
+.img-change-image {
+  width: 50%;
+  max-height: 400px;
+  /* Adjust max-height for better scaling on smaller screens */
+  object-fit: cover;
+}
+
+.img-change-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+  font-size: 1.5rem;
+  /* Adjust font size for buttons */
+}
+
+.img-change-button.left {
+  left: 10px;
+}
+
+.img-change-button.right {
+  right: 10px;
+}
+
+.img-change:focus {
+  outline: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .img-heading {
+    font-size: 2rem;
+  }
+
+  .img-para {
+    font-size: 1rem;
+  }
+
+  .img-change-image {
+    max-height: 350px;
+  }
+
+  .img-change-button {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .img-heading {
+    font-size: 1.8rem;
+  }
+
+  .img-para {
+    font-size: 0.9rem;
+  }
+
+  .img-change-image {
+    max-height: 300px;
+  }
+
+  .img-change-button {
+    font-size: 1rem;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .img-heading {
+    font-size: 1.5rem;
+  }
+
+  .img-para {
+    font-size: 0.8rem;
+  }
+
+  .img-change-image {
+    max-height: 250px;
+  }
+
+  .img-change-button {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .img-heading {
+    font-size: 1.2rem;
+  }
+
+  .img-para {
+    font-size: 0.7rem;
+  }
+
+  .img-change-image {
+    max-height: 200px;
+  }
+
+  .img-change-button {
+    font-size: 0.6rem;
+    padding: 4px;
+  }
+}

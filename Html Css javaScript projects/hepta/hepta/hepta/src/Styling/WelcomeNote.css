@@ -1,0 +1,74 @@
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+  /* Default layout */
+  gap: 20px;
+  /* Space between image and text */
+  padding: 20px;
+  /* Padding for smaller screens */
+  margin-top: 15%;
+}
+
+.welcome-image {
+  box-shadow: 0 0 40px rgba(108, 117, 125, 0.6);
+  width: 40%;
+  height: auto;
+  /* Adjust height to maintain aspect ratio */
+  max-width: 100%;
+  /* Ensure image does not exceed container width */
+}
+
+.welcome-content {
+  width: 40%;
+  margin-top: 0;
+  /* Remove top margin on smaller screens */
+}
+
+.wel-heading {
+  font-weight: 800;
+  font-size: 2.5rem;
+  /* Use rem for scalable font size */
+  color: black;
+}
+
+.wel-data {
+  line-height: 1.5;
+  /* Adjust line-height for readability */
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(104, 103, 103);
+}
+
+.wel-link {
+  text-decoration: none;
+  color: rgb(4, 59, 59);
+  font-size: 1.5rem;
+  /* Use rem for scalable font size */
+  font-weight: 800;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .welcome {
+    flex-direction: column;
+    /* Stack image and text on top of each other */
+    text-align: center;
+    /* Center align text */
+  }
+
+  .welcome-image {
+    width: 100%;
+    /* Full width on smaller screens */
+    height: auto;
+    /* Adjust height to maintain aspect ratio */
+  }
+
+  .welcome-content {
+    width: 100%;
+    /* Full width on smaller screens */
+    margin: 20px 0;
+    /* Margin for spacing */
+  }
+}

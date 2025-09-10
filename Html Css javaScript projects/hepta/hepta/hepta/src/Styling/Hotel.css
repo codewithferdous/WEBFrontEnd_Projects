@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.hotel-page {
+  background-image: url('../Styling/HotelPic1.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+  width: 100%;
+  position: relative;
+  /* Ensure the content aligns properly */
+}
+
+.hotel-heading {
+  color: rgb(32, 18, 18);
+  margin: 0 auto;
+  font-size: 45px;
+  text-align: center;
+  /* Center the heading */
+  padding-top: 10%;
+  /* Adjust spacing */
+}
+
+.hotel-content {
+  color: white;
+  font-weight: bolder;
+  font-size: x-large;
+  text-align: center;
+  /* Center content for better alignment */
+  margin: 20px auto;
+  max-width: 800px;
+  /* Limit the width of content */
+}
+
+.hotel-content a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+
+.hotel-content a:hover {
+  text-decoration: underline;
+}
+
+.hotel-button {
+  font-weight: bolder;
+  font-size: 18px;
+  padding: 16px 30px;
+  color: white;
+  background-color: rgba(15, 15, 15, 0.068);
+  border: 2px solid white;
+  border-radius: 5px;
+  display: block;
+  margin: 20px auto;
+  /* Center the button */
+}
+
+.hotel-button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .hotel-heading {
+    font-size: 36px;
+  }
+
+  .hotel-content {
+    font-size: large;
+    padding: 0 20px;
+    /* Add padding for smaller screens */
+  }
+
+  .hotel-button {
+    font-size: 16px;
+    padding: 14px 25px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hotel-heading {
+    font-size: 30px;
+  }
+
+  .hotel-content {
+    font-size: medium;
+    padding: 0 15px;
+    /* Adjust padding for medium screens */
+  }
+
+  .hotel-button {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hotel-heading {
+    font-size: 24px;
+    padding-top: 15%;
+    /* Adjust padding for mobile screens */
+  }
+
+  .hotel-content {
+    font-size: medium;
+    padding: 0 10px;
+    /* Adjust padding for mobile screens */
+  }
+
+  .hotel-button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hotel-heading {
+    font-size: 20px;
+    padding-top: 20%;
+    /* Increase padding for smaller screens */
+  }
+
+  .hotel-content {
+    font-size: small;
+    padding: 0 5px;
+    /* Reduce padding for very small screens */
+  }
+
+  .hotel-button {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+}
