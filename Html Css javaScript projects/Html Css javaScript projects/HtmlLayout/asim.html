@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body {
+        background-color: rgb(3, 3, 3);
+    }
+    .outer{
+        margin-top: 60px;
+    }
+    .first {
+        width: 180px;
+        height: 180px;
+        border: 2px solid rgb(41, 10, 10);
+        color: white;
+        border-radius: 10px;
+        font-size: 24px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .first:hover {
+        transform: scale(1.1); /* Slightly enlarge the box */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add shadow */
+        background-color: #FFD700; /* Change background to gold */
+    }
+    .no1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .no2 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .no3 {
+        display: flex;
+    }
+    .no1 .first:nth-child(1) {
+        background-color: #FF5733; /* Vibrant Orange */
+    }
+    .no1 .first:nth-child(2) {
+        background-color: #33FF57; /* Bright Green */
+    }
+    .no1 .first:nth-child(3) {
+        background-color: #5733FF; /* Deep Purple */
+    }
+    .no2 .first:nth-child(1) {
+        background-color: #FFC300; /* Warm Yellow */
+    }
+    .no2 .first:nth-child(2) {
+        background-color: #33C4FF; /* Cool Cyan */
+    }
+    .no2 .first:nth-child(3) {
+        background-color: #FF33A6; /* Hot Pink */
+    }
+    .no2 .first:nth-child(4) {
+        background-color: #8D33FF; /* Rich Violet */
+    }
+    .no3 .first:nth-child(1) {
+        background-color: #FF8C33; /* Sunset Orange */
+        margin-left: 325px;
+    }
+    .no3 .first:nth-child(2) {
+        background-color: #33FFA1; /* Mint Green */
+        margin-left: 500px;
+    }
+</style>
+</head>
+<body>
+    <div class="outer">
+        <div class="no1">
+            <div class="first">Box 2</div>
+            <div class="first">Box 1</div>
+            <div class="first">Box 3</div>
+        </div>
+        <div class="no2">
+            <div class="first">Box : 1</div>
+            <div class="first">Box : 2</div>
+            <div class="first">Box : 3</div>
+            <div class="first">Box : 4</div>
+        </div>
+        <div class="no3">
+            <div class="first">Box : 1</div>
+            <div class="first" style="margin-right: 20px;">Box:2</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+/* Reset some default styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for the whole game */
+.outer {
+    text-align: center;
+    padding: 20px;
+    max-width: 90%;
+    margin: auto; /* Center the container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling for the game title */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333; /* Dark color for the title */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Slight shadow for text */
+}
+
+/* Container for images */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between images */
+    flex-wrap: wrap; /* Ensure responsiveness */
+    margin-bottom: 20px;
+}
+
+/* Styling for each image container */
+.imgDiv {
+    flex: 1 1 200px; /* Responsive flex basis */
+    max-width: 150px; /* Set a maximum width for images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease; /* Smooth transition */
+    margin: 10px; /* Add margin for spacing */
+}
+
+/* Styling for images */
+.imgDiv img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #000; /* Optional: add border to images */
+    border-radius: 8px; /* Optional: rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for images */
+.imgDiv:hover img {
+    transform: scale(1.1); /* Enlarge image */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add shadow */
+    border-color: #007bff; /* Change border color on hover */
+}
+
+/* Styling for the score card */
+.scoreCard {
+    font-size: 1.5em;
+    background-color: #ffffff; /* White background for the card */
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    max-width: 500px;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for the score card */
+.scoreCard:hover {
+    transform: scale(1.05); /* Slightly enlarge the card */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+/* Styling for individual scores */
+.scoreCard .user, .scoreCard .comp {
+    display: inline-block;
+    font-weight: bold;
+    margin: 0 15px; /* Space between scores */
+    color: #333; /* Dark color for text */
+}
+
+/* Styling for the play button text */
+#result {
+    font-size: 2em; /* Larger text size */
+    cursor: pointer;
+    color: #007bff; /* Blue color for the play text */
+    text-decoration: none; /* Remove underline */
+    background-color: #e0e0e0; /* Light gray background */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Add padding */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    display: inline-block; /* Ensure text is inline */
+}
+
+/* Hover effect for play button text */
+#result:hover {
+    color: #ffffff; /* Change text color on hover */
+    background-color: #007bff; /* Change background color on hover */
+    transform: scale(1.05); /* Slightly enlarge the text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgDiv {
+        max-width: 120px; /* Smaller images on small screens */
+    }
+
+    .scoreCard {
+        font-size: 1.2em;
+        padding: 15px;
+    }
+
+    #result {
+        font-size: 1.5em; /* Adjust font size for small screens */
+    }
+}

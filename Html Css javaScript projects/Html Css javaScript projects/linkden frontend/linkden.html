@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    margin-left: 550px;
+}
+        #logo{
+            background-color:white ;
+            display: flex;
+justify-content: space-between;
+        }
+        #navbar{
+            display: flex;
+            justify-content: space-evenly;
+            
+            width: 1800px;
+            align-items: center;
+            font-size: 40px;
+            
+
+        }
+        .navbutton{
+            text-decoration: none;
+            color: rgb(33, 27, 27);
+        }
+        .navbutton:hover{
+border: 2px solid red;
+
+        }
+        .button:hover{
+border: 2px solid rgb(255, 255, 0);
+text-shadow: 0 0 10px blue;
+        }
+        .ss{
+            width: 210px;
+            height: 130px;
+            margin-right: 10px;
+            background-color: white;
+            font-size: 30px;
+            border-radius: 40px;
+        }
+        #signin{
+            color: blue;
+            border-color: blue;
+        }
+        .ss:hover{
+            transform: translateY(4px);
+            box-shadow: #f3a20e;
+            text-shadow: 0 0 10px blue;
+        }
+        .button:hover{
+            transform: translateY(4px);
+            box-shadow: #f3a20e;
+        }
+        #first{
+            width: 650px;
+            height: 1500px;
+            color: brown;
+        }
+        h1{
+            font-size: 120px;
+        }
+      
+        p{
+            font-size: 30px;
+            color:black;
+            
+        }
+        input{
+            width: 550px;
+            height: 90px;
+            border-radius: 10px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        #fg{
+            font-size: 32px;
+            margin-left: 10px;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+      #pak{
+        width: 550px;
+        height: 100px;
+        background-color: blue;
+        color: white;
+        font-size: 30px;
+        border-radius: 50px;
+    margin-left: 30px;
+    margin-top: 50px;
+      }
+      main{
+        display: flex;
+        justify-content:center ;
+      }
+      #second{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #pic{
+        width: 900px;
+        height: 1200px;
+        border-radius: 900px;
+      }
+      .gn{
+        width: 550px;
+        height: 100px;
+        background-color: white;
+        border-radius: 50px;
+        margin-left: 40px;
+        margin-top: 20px;
+        font-size: 30px;
+      }
+.button{
+    width: 200px;
+    height: 150px;
+    border-radius: 80px;
+    margin: 10px;
+    background-color: white;
+    font-size: 20px;
+}
+#internal2{
+display: flex;
+}
+h2{
+    font-size: 70px;
+}
+#p1{
+    font-size: 25px;
+}
+#third{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+#job{
+    display: flex;
+    background-color: burlywood;
+    justify-content: space-evenly;
+}
+#jobbutton{
+margin-top: 250px;
+color: blue;
+border: 10px solid rgb(7, 7, 243);
+font-size: 30px;
+
+background-color:burlywood;
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: antiquewhite;
+}
+h3{
+    font-size: 40px;
+}
+.foot{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   
+}
+.menu-item {
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: block;
+    font-size: 30px;
+    text-decoration: none;
+    color: #333;
+  }
+  .menu-item:hover{
+    text-decoration: dashed;
+    color: blue;
+  }
+  #footimg{
+    background-color: antiquewhite;
+    border-radius: 2000px;
+  }
+  @keyframes colorChange {
+        0% { color: red; text-shadow: 0 0 10px red; }
+        25% { color: blue; text-shadow: 0 0 10px blue; }
+        50% { color: green; text-shadow: 0 0 10px green; }
+        75% { color: purple; text-shadow: 0 0 10px purple; }
+        100% { color: orange; text-shadow: 0 0 10px orange; }
+    }
+    
+    #h1 {
+        animation: colorChange 5s infinite; /* Change colors every 5 seconds */
+    }
+    </style>
+</head>
+<body>
+    <header> 
+<div id="logo" >
+     <img src="linkdenlogo.png" alt="pic">
+     <div id="navbar">
+        <a href="" class="navbutton">Articles</a><a href="" class="navbutton">People</a><a href="" class="navbutton">Learning</a><a href="" class="navbutton">Jobs</a><a href="" class="navbutton">Get the Help</a>
+     </div>
+</div>
+<div id="ndRow">
+    <button class="ss">Join now</button><button class="ss" id="signin">Sign in</button>
+</div>
+    </header>
+    <main>
+        <div id="first">
+
+       
+        <h1>Welcome to your professional community</h1>
+        <p>Email or phone</p>
+        <input type="email" name="" id="">
+        <p>Password</p>
+        <input type="password" name="" id="">
+        <a href="" id="fg">Fogot Password?</a>
+        <br>
+        <button id="pak">Sign In</button>
+        <p>By clicking Continue, you agree to LinkedIn’s <a href="">User Agreement, Privacy Policy,</a> and <a href="">Cookie Policy.</a></p>
+        <button class="gn">Countinue with Google</button>
+        <button class="gn">New to Linkedln? Join now</button>
+    </div>
+    <div id="second" >
+<img src="2ndpic.jpeg" alt="pic" id="pic">
+    </div>
+    </main>
+    <div id="third">
+        <div id="internal1">
+            <h2>Explore collaborative articles</h2>
+            <p id="p1">We’re unlocking community knowledge in a new way. Experts add insights directly into each article, started with the help of AI.</p>
+        </div>
+        <div class="internal2">
+            <button class="button">Marketing</button>
+            <button class="button">Shopping</button>
+            <button class="button">Technology</button>
+            <button class="button">Finance</button>
+            <button class="button">Healthcare</button>
+            <button class="button">Education</button>
+            <button class="button">Entertainment</button>
+            <button class="button">Travel</button>
+            <button class="button">Sports</button>
+            <button class="button">Jobs</button>
+        </div>
+    </div>
+    <div id="third">
+        <div id="internal1">
+            <h2>Find the right job or internship for you</h2>
+           
+        </div>
+        <div class="internal2"><caption style="font-size:x-large">SUGGESTED SEARCHES</caption>
+            <br>
+            <button class="button">Marketing</button>
+            <button class="button">Shopping</button>
+            <button class="button">Technology</button>
+            <button class="button">Finance</button>
+            <button class="button">Healthcare</button>
+            <button class="button">Education</button>
+            <button class="button">Entertainment</button>
+            <button class="button">Travel</button>
+            <button class="button">Sports</button>
+            <button class="button">Jobs</button>
+        </div>
+    </div>
+    <div id="job">
+        <h1 style="width: 700px;">Post your job for millions of people to see</h1>
+        <button class="button" id="jobbutton">Post a Job</button>
+    </div>
+    <footer>
+        <img src="linkdenlogo.png" alt="linkden" id="footimg">
+        <div class="foot">
+            <h3>General</h3>
+            <a href="#" class="menu-item">Sign Up</a>
+<a href="#" class="menu-item">Help Center</a>
+<a href="#" class="menu-item">About</a>
+<a href="#" class="menu-item">Press</a>
+<a href="#" class="menu-item">Blog</a>
+<a href="#" class="menu-item">Careers</a>
+<a href="#" class="menu-item">Developers</a>
+
+        </div>
+        <div class="foot">
+            <h3>Browse LinkedIn</h3>
+            <a href="#" class="menu-item">Learning</a>
+<a href="#" class="menu-item">Jobs</a>
+<a href="#" class="menu-item">Salary</a>
+<a href="#" class="menu-item">Mobile</a>
+<a href="#" class="menu-item">Services</a>
+<a href="#" class="menu-item">Products</a>
+
+        </div>
+        <div class="foot">
+            <h3>Directories</h3>
+            <a href="#" class="menu-item">Members</a>
+            <a href="#" class="menu-item">Jobs</a>
+            <a href="#" class="menu-item">Companies</a>
+            <a href="#" class="menu-item">Featured</a>
+            <a href="#" class="menu-item">Learning</a>
+            <a href="#" class="menu-item">Posts</a>
+            <a href="#" class="menu-item">Articles</a>
+            <a href="#" class="menu-item">Schools</a>
+            <a href="#" class="menu-item">News</a>
+            <a href="#" class="menu-item">News Letters</a>
+            <a href="#" class="menu-item">Services</a>
+            <a href="#" class="menu-item">Products</a>
+            <a href="#" class="menu-item">Advice</a>
+            <a href="#" class="menu-item">People Search</a>
+          
+
+        </div>
+        <div class="foot">
+            <h3>Business Solutions</h3>
+            <a href="#" class="menu-item">Talent</a>
+<a href="#" class="menu-item">Marketing</a>
+<a href="#" class="menu-item">Sales</a>
+<a href="#" class="menu-item">Learning</a>
+
+        </div>
+    </footer>
+    <h1 id="h1">Muhammad Asim Ilyas Rathore</h1>
+</body>
+</html> 

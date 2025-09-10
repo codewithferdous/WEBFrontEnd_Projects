@@ -1,0 +1,229 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f4f4f4, #eaeaea);
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, #007bff, transparent 70%);
+    transform: rotate(45deg);
+    z-index: -1;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.container:hover::before {
+    opacity: 1;
+    top: -20%;
+    left: -20%;
+    width: 140%;
+    height: 140%;
+}
+
+/* Heading Styling */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #007bff;
+    margin: 10px auto 0;
+    transition: width 0.3s ease;
+}
+
+h2:hover {
+    color: #007bff;
+}
+
+h2:hover::after {
+    width: 70px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Amount Input Styling */
+.amount p {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.amount input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.amount input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+/* Drop Down Container Styling */
+.dropDown {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.form, .to {
+    width: 48%;
+    transition: transform 0.3s ease;
+}
+
+.form:hover, .to:hover {
+    transform: translateY(-2px);
+}
+
+/* Label and Select Container Styling */
+.form p, .to p {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.select-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.select-container:hover {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.select-container img {
+    width: 35px;
+    height: 25px;
+    border-right: 1px solid #ddd;
+    transition: transform 0.3s ease;
+}
+
+.select-container img:hover {
+    transform: scale(1.1);
+}
+
+.select-container select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.select-container select:hover {
+    background-color: #f1f1f1;
+}
+
+/* Message Styling */
+.msg {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #fc0707;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s forwards ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Button Styling */
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dropDown {
+        flex-direction: column;
+    }
+
+    .form, .to {
+        width: 100%;
+    }
+}
