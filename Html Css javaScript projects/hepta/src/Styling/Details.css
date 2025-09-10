@@ -1,0 +1,132 @@
+.details {
+  background-color: rgb(241, 241, 241);
+  width: 100%;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+.experience {
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+}
+
+.exp-heading {
+  font-weight: 800;
+  font-size: 2rem;
+  /* Adjusted for better scaling */
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 1rem;
+}
+
+.exp-para {
+  line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(104, 103, 103);
+  font-size: 1rem;
+  /* Adjusted for better scaling */
+}
+
+.card-details,
+.card2 {
+  display: flex;
+  flex-wrap: wrap;
+  /* Allow cards to wrap */
+  justify-content: center;
+  gap: 2rem;
+  /* Adjust gap between cards */
+  padding: 0 1rem;
+}
+
+.card {
+  width: 100%;
+  max-width: 300px;
+  /* Set max-width for better scaling */
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 1rem;
+}
+
+.card-img {
+  margin: 0 auto;
+  height: 100px;
+  width: 100px;
+}
+
+.card-heading {
+  font-size: 1.5rem;
+  /* Adjusted for better scaling */
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 0.5rem;
+}
+
+.card-para {
+  line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(104, 103, 103);
+  font-size: 1rem;
+  /* Adjusted for better scaling */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .experience {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .exp-heading {
+    font-size: 1.75rem;
+  }
+
+  .exp-para {
+    font-size: 0.875rem;
+  }
+
+  .card-details,
+  .card2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 90%;
+  }
+
+  .card-heading {
+    font-size: 1.25rem;
+  }
+
+  .card-para {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .exp-heading {
+    font-size: 1.5rem;
+  }
+
+  .exp-para {
+    font-size: 0.75rem;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+  .card-heading {
+    font-size: 1rem;
+  }
+
+  .card-para {
+    font-size: 0.75rem;
+  }
+}

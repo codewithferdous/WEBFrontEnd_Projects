@@ -1,0 +1,115 @@
+.destinaton {
+  background-color: rgba(255, 249, 249, 0.863);
+  width: 100%;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  margin-top: 10%;
+  /* Adjust margins for better spacing */
+
+}
+
+.destination-data {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.destination-heading {
+  font-size: 2rem;
+  /* Adjusted font size for scaling */
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 1rem;
+  /* Spacing below heading */
+}
+
+.destination-para {
+  line-height: 1.6;
+  color: rgb(104, 103, 103);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  /* Adjusted font size for better readability */
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 2rem;
+  /* Spacing below paragraph */
+}
+
+.dest-card-details {
+  display: flex;
+  flex-wrap: wrap;
+  /* Allow cards to wrap on smaller screens */
+  justify-content: center;
+  gap: 2rem;
+  /* Adjusted gap between cards */
+  padding: 0 1rem;
+}
+
+.dest-card {
+  width: 100%;
+  max-width: 200px;
+  /* Set max-width for better scaling */
+  text-align: center;
+}
+
+.dest-card-heading {
+  font-size: 1.25rem;
+  /* Adjusted font size for better scaling */
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 0.5rem;
+  /* Spacing above heading */
+}
+
+.dest-card-para {
+  line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(104, 103, 103);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .destination-heading {
+    font-size: 1.5rem;
+  }
+
+  .destination-para {
+    font-size: 0.875rem;
+  }
+
+  .dest-card-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dest-card {
+    max-width: 100%;
+  }
+
+  .dest-card-heading {
+    font-size: 1rem;
+  }
+
+  .dest-card-para {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .destination-heading {
+    font-size: 1.25rem;
+  }
+
+  .destination-para {
+    font-size: 0.75rem;
+  }
+
+  .dest-card-heading {
+    font-size: 0.875rem;
+  }
+
+  .dest-card-para {
+    font-size: 0.75rem;
+  }
+}

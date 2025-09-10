@@ -1,0 +1,83 @@
+/* src/Styling/Contact.css */
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.contact-page {
+  background-image: url('../Styling/climbing.webp');
+  /* Adjust path if needed */
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.contact-page h1 {
+  font-size: 2.5rem;
+  /* Adjust font size */
+  color: white;
+  /* Ensure text is readable */
+  text-align: center;
+  margin-top: 10%;
+}
+
+.contact-page p {
+  font-size: 1.125rem;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .contact-page h1 {
+    font-size: 2rem;
+  }
+
+  .contact-page p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .contact-page h1 {
+    font-size: 1.75rem;
+  }
+
+  .contact-page p {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-page {
+    height: auto;
+    /* Allow height to adjust based on content */
+    padding: 10px;
+  }
+
+  .contact-page h1 {
+    font-size: 1.5rem;
+  }
+
+  .contact-page p {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-page h1 {
+    font-size: 1.25rem;
+  }
+
+  .contact-page p {
+    font-size: 0.625rem;
+  }
+}

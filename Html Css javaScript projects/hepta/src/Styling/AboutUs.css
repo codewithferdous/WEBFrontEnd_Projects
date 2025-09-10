@@ -1,0 +1,167 @@
+/* src/Styling/aboutPage.css
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .aboutUs-page {
+    background-image: url('../Styling/Welcome.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    width: 100%;
+  }
+  
+  .aboutUs-heading {
+    color: rgb(32, 18, 18);
+    margin-left: 40%;
+    margin-top: 12%;
+    font-size: 45px;
+  }
+  
+  .about-content {
+    margin-left: 33%;
+    color: white;
+    font-weight: bolder;
+    font-size: x-large;
+  }
+  
+  .about-content a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+  }
+  
+  .about-content a:hover {
+    text-decoration: underline;
+  }
+  
+  .about-button {
+    margin-left: 43%;
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 16px 30px;
+    color: white;
+    background-color: rgba(15, 15, 15, 0.068);
+    border: 2px solid white;
+    border-radius: 5px;
+  }
+  
+  .about-button:hover {
+    background-color: white;
+    color: black;
+  }
+   */
+     /* src/Styling/AboutUs.css */
+         /* src/Styling/AboutUs.css */
+         body {
+           margin: 0;
+           font-family: 'Times New Roman', Times, serif;
+         }
+    
+         .aboutUs-page {
+           background-image: url('../Styling/Welcome.jpg');
+           background-size: cover;
+           background-position: center;
+           height: 650px;
+           width: 100%;
+         }
+    
+         .aboutUs-heading {
+           color: rgb(32, 18, 18);
+           margin-left: auto;
+           margin-right: auto;
+           text-align: center;
+           font-size: 45px;
+         }
+    
+         .about-content {
+           text-align: center;
+           color: white;
+           font-weight: bolder;
+           font-size: x-large;
+         }
+    
+         .about-content a {
+           text-decoration: none;
+           color: black;
+           font-size: 25px;
+         }
+    
+         .about-content a:hover {
+           text-decoration: underline;
+         }
+    
+         .about-button {
+           display: block;
+           margin: 0 auto;
+           font-weight: bolder;
+           font-size: 18px;
+           padding: 16px 30px;
+           color: white;
+           background-color: rgba(15, 15, 15, 0.068);
+           border: 2px solid white;
+           border-radius: 5px;
+         }
+    
+         .about-button:hover {
+           background-color: white;
+           color: black;
+         }
+    
+         /* Responsive Styles */
+         @media (max-width: 1200px) {
+           .aboutUs-heading {
+             font-size: 36px;
+           }
+    
+           .about-content {
+             font-size: large;
+           }
+    
+           .about-content a {
+             font-size: 20px;
+           }
+    
+           .about-button {
+             font-size: 16px;
+           }
+         }
+    
+         @media (max-width: 992px) {
+           .aboutUs-heading {
+             font-size: 28px;
+           }
+    
+           .about-content {
+             font-size: medium;
+           }
+    
+           .about-content a {
+             font-size: 18px;
+           }
+    
+           .about-button {
+             font-size: 14px;
+             padding: 12px 24px;
+           }
+         }
+    
+         @media (max-width: 768px) {
+           .aboutUs-heading {
+             font-size: 24px;
+           }
+    
+           .about-content {
+             font-size: small;
+           }
+    
+           .about-content a {
+             font-size: 16px;
+           }
+    
+           .about-button {
+             font-size: 12px;
+             padding: 10px 20px;
+           }
+         }
